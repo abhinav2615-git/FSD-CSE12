@@ -1,21 +1,67 @@
-.nav {
-  list-style: none;     /* removes bullets */
-  background-color: #1a0707;
-  padding: 0;
-  margin: 0;
+* {
+    background-color: #a965f1;
 }
 
-.nav li {
-  display: inline;      /* shows items in one line */
+p {
+    color: #f90202;
+    text-decoration: underline;
+    font-size: 30px;
+    font-family: "Courier New";
+    font-weight: 900;
+    animation: slideIn 1.2s ease-out;
 }
 
-.nav a {
-  text-decoration: none;
-  color: white;
-  padding: 10px 15px;
-  display: inline-block;
+#intro {
+    color: #222069;
+    text-decoration: underline;
+    font-size: 50px;
+    font-family: "Courier New";
+    font-weight: 900;
+    animation: slideIn 1s ease-out;
 }
 
-.nav a:hover {
-  background-color: #555;  /* color changes on hover */
+#box {
+    background-color: #f64707;
+    width: 500px;
+    border-radius: 12px;
+    text-align: center;
+    padding: 20px; 
+    padding-top: 100px;
+    animation: fadeInBox 1s ease-in-out;
+}
+
+#link {
+    font-size: 30px;
+    color: white;
+    background-color: #4c71f6;
+    padding: 5px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    animation: slideIn 1.2s ease-out;
+}
+
+
+#pic {
+    border-radius: 10px;
+    animation: slideDown 1s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
 }
